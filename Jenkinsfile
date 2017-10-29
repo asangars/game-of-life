@@ -1,5 +1,5 @@
-stage('Build'){
-            steps {
-                sh 'mvn clean install'
-            }
-        }
+node{
+stage('build') {
+    sh 'mvn clean install'
+ }
+}
